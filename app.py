@@ -8,7 +8,7 @@ with open("model.pkl", "rb") as f:
     model = pickle.load(f)
 
 # Page title
-st.title("Crop Recommendation System")
+st.title("🌱Crop Recommendation System")
 st.write("Enter the required information to get the best crop recommendation.")
 
 # Input fields
@@ -27,4 +27,4 @@ if st.button("Predict"):
     prediction = model.predict(features)[0]
 
     # Display the result
-    st.success(f"Recommended Crop: **{prediction}**")
+    st.success(f"🌾Recommended Crop: **{prediction}**")
